@@ -6,13 +6,13 @@ const {
   createNewCost,
   changeCostInfo,
   deletCost,
-  delteAllCost,
+  deletAllCost,
 } = require("../controllers/costs.controllers");
 
 router.get("allCosts", getAllCosts);
 router.post("createCost", createNewCost);
 router.patch("updateCost", changeCostInfo);
 router.delete("deleteCost", deletCost);
-router.delete("deleteAllCosts", delteAllCost);
+router.delete("deleteAllCosts", deletAllCost);
 
 module.exports = router;
