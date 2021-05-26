@@ -33,7 +33,7 @@ module.exports.deletCost = (req, res) => {
   });
 };
 
-module.exports.delteAllCost = (req, res) => {
+module.exports.deletAllCost = (req, res) => {
   Cost.deleteMany(req.body).then((result) => {
     Cost.find().then((result) => {
       res.send({ data: result });
