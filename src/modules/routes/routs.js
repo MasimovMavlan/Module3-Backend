@@ -9,10 +9,9 @@ const {
   deletAllCost,
 } = require("../controllers/costs.controllers");
 
-router.get("allCosts", getAllCosts);
-router.post("createCost", createNewCost);
-router.patch("updateCost", changeCostInfo);
-router.delete("deleteCost", deletCost);
-router.delete("deleteAllCosts", deletAllCost);
+router.get("/allCosts", getAllCosts);
+router.post("/createCost", createNewCost);
+router.patch("/updateCost", changeCostInfo);
+router.delete("/deleteCost", deletCost);
 
 module.exports = router;
